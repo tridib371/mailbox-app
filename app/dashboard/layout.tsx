@@ -23,7 +23,7 @@ export default function DashboardLayout({ children }: { children: React.ReactNod
         const active = pathname === href;
         return (
           <Link key={href} href={href} onClick={() => setSidebarOpen(false)} style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', padding: '0.6rem 0.75rem', borderRadius: '8px', fontSize: '0.875rem', fontWeight: active ? '600' : '400', background: active ? 'rgba(108,99,255,0.2)' : 'transparent', color: active ? 'white' : 'var(--muted)', transition: 'all 0.2s' }}>
-            <Icon size={1} style={{ color: active ? 'var(--accent)' : 'inherit' }} />{label}
+            <Icon size={18} style={{ color: active ? 'var(--accent)' : 'inherit' }} />{label}
           </Link>
         );
       })}
